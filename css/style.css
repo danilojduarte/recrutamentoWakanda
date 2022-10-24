@@ -18,6 +18,12 @@
     --nav-height: 6.2rem;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
@@ -28,6 +34,10 @@ body {
     width: 37.5rem;
     margin-inline: auto;
     padding-inline: 2.4rem;
+}
+
+ul {
+    list-style: none;
 }
 
 /* ==HEADER== */
@@ -118,7 +128,79 @@ nav .box-content {
     justify-content: space-between;
 }
 
-nav .scroll {
+nav.scroll {
     width: 100vw;
     background: var(--cor-fundo-cinza);
+}
+
+/* ==EXTENSÃO DO MENU== */
+body.extensao-menu {
+    overflow: hidden;
+}
+
+.menu,
+.close-menu,
+body.extensao-menu .open-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.extensao-menu .menu,
+body.extensao-menu .close-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.extensao-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--cor-fundo-cinza);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body.extensao-menu nav {
+    position: relative;
+}
+
+.social-links {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+    margin-top: 4rem;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 3.1rem;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--cor-text-2);
+    cursor: pointer;
+}
+.menu .button {
+    background: var(--cor-principal-azul);
+    border-radius: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 18px;
+
+    margin-top: 4.8rem;
+    margin-bottom: 6rem;
+    cursor: pointer;
 }

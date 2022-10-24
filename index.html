@@ -19,9 +19,9 @@
     <title>Wakanda Recruiter</title>
 </head>
 
-<body onscroll="onScroll()">
+<body onscroll="onScroll()" class="extensao-menu">
     <nav id="navegacao" class="">
-        <div  class="box-content">
+        <div class="box-content">
             <a class="logo" href="#">
                 <svg width="68" height="14" viewBox="0 0 68 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -32,7 +32,35 @@
                         fill="black" />
                 </svg>
             </a>
-            <box-icon name='menu-alt-right'></box-icon>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">For Freelancer</a></li>
+                </ul>
+
+                <a class="button" href="#">Contact</a>
+
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">
+                            <box-icon type='logo' name='instagram-alt'></box-icon>
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <box-icon type='logo' name='facebook'></box-icon>
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <box-icon type='logo' name='linkedin'></box-icon>
+                        </a></li>
+                </ul>
+
+            </div>
+            <button class="open-menu">
+                <box-icon name='menu-alt-right'></box-icon>
+            </button>
+            <button class="close-menu">
+                <box-icon name='x'></box-icon>
+            </button>
         </div>
     </nav>
     <header class="box-content">
