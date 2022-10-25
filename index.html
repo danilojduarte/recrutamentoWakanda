@@ -22,7 +22,7 @@
 <body onscroll="onScroll()" class="">
     <nav id="navegacao" class="">
         <div class="box-content">
-            <a class="logo" href="#">
+            <a class="logo" href="#home">
                 <svg width="68" height="14" viewBox="0 0 68 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M1.21648 8.64644L3.56627 10.9962C3.56772 10.9977 3.56928 10.999 3.57073 11.0005C3.57219 11.0019 3.57392 11.0039 3.57559 11.0056C4.2613 11.6912 5.1653 12.1154 6.13089 12.2046C7.09648 12.2937 8.0628 12.0423 8.86254 11.4939C9.66228 12.0423 10.6286 12.2937 11.5942 12.2046C12.5598 12.1154 13.4638 11.6912 14.1495 11.0056L16.4993 8.65582C17.2314 7.92353 17.6636 6.9442 17.7112 5.90982C17.7588 4.87543 17.4183 3.86052 16.7565 3.06408C16.0948 2.26769 15.1594 1.74712 14.1338 1.60449C13.1082 1.46187 12.0662 1.70741 11.2123 2.29305C10.5208 1.81888 9.70209 1.56501 8.86371 1.56473C8.02527 1.56451 7.20644 1.81793 6.5147 2.2917C5.66175 1.70244 4.61926 1.45349 3.59207 1.59366C2.56488 1.73388 1.62726 2.25306 0.963338 3.04934C0.299468 3.84561 -0.0426305 4.86135 0.0041662 5.89697C0.0510201 6.93265 0.483416 7.91335 1.21648 8.64644ZM12.4882 3.46973C13.0187 3.21637 13.6217 3.15873 14.1905 3.30694C14.7594 3.4551 15.2575 3.79965 15.597 4.27963C15.9364 4.75961 16.0952 5.34407 16.0453 5.92981C15.9955 6.51556 15.7402 7.06482 15.3245 7.48053L12.9748 9.83033C12.6101 10.1946 12.1416 10.437 11.6336 10.5242C11.1255 10.6115 10.603 10.5394 10.1376 10.3178L11.7997 8.65582C12.4372 8.02172 12.8498 7.19662 12.9748 6.30625C13.0023 6.11158 13.0162 5.91524 13.0164 5.71861C13.018 4.94132 12.8 4.17939 12.3876 3.52055C12.4208 3.50279 12.4544 3.48592 12.4882 3.4699L12.4882 3.46973ZM7.10022 3.95613C7.56814 3.49128 8.20124 3.23094 8.86081 3.232C9.52038 3.23312 10.1526 3.49564 10.619 3.96199C11.0853 4.4284 11.3479 5.0606 11.349 5.72017C11.35 6.37974 11.0897 7.01282 10.6249 7.48076L8.86254 9.24307L7.10022 7.48076C6.63365 7.01301 6.37163 6.3793 6.37163 5.71861C6.37163 5.05798 6.63365 4.42426 7.10022 3.95652L7.10022 3.95613ZM2.39137 3.9468C2.75782 3.5813 3.2288 3.33877 3.73916 3.25272C4.24952 3.16666 4.774 3.24138 5.24001 3.46654C5.27352 3.48268 5.30669 3.4996 5.33947 3.51731C4.92573 4.17688 4.70704 4.94004 4.70872 5.71861C4.70889 5.91523 4.72273 6.11158 4.75027 6.30625C4.87524 7.19662 5.28793 8.02172 5.92533 8.65582L7.5773 10.3077L7.58662 10.3171C7.1215 10.5386 6.59919 10.6107 6.09141 10.5237C5.58362 10.4366 5.11526 10.1945 4.75049 9.83072C4.74881 9.82904 4.74725 9.82725 4.74563 9.82558C4.74401 9.8239 4.74261 9.82279 4.74116 9.82133L2.40237 7.48254L2.3912 7.47138C1.92385 7.00396 1.66127 6.37003 1.66127 5.70906C1.66127 5.04809 1.92385 4.41416 2.3912 3.94674L2.39137 3.9468Z"
@@ -34,10 +34,10 @@
             </a>
             <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">How it works</a></li>
-                    <li><a href="">For Freelancer</a></li>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#feature">Feature</a></li>
+                    <li><a onclick="closeMenu()" href="">How it works</a></li>
+                    <li><a onclick="closeMenu()" href="">For Freelancer</a></li>
                 </ul>
 
                 <a class="button" href="#">Contact</a>
@@ -55,19 +55,15 @@
                 </ul>
 
             </div>
-            <button 
-            onclick="openMenu()"
-            class="open-menu">
+            <button onclick="openMenu()" class="open-menu">
                 <box-icon name='menu-alt-right'></box-icon>
             </button>
-            <button 
-            onclick="closeMenu()"
-            class="close-menu">
+            <button onclick="closeMenu()" class="close-menu">
                 <box-icon name='x'></box-icon>
             </button>
         </div>
     </nav>
-    <header class="box-content">
+    <header id="home" class="box-content">
         <h1>Wakanda</h1>
         <h4>Recruit top talented<br>freelancer for your business</h4>
         <p>Connect you to thoudsands of talented freelancer from any industry. You can have the best people in just few
@@ -94,6 +90,36 @@
             </div>
         </div>
     </header>
+
+    <!-- ==SESSÃO FEATURE== -->
+    <section id="feature">
+        <div class="box-content">
+            <header>
+                <div class="cards">
+                    <h4>FEATURE</h4>
+                    <h2>The benefit of using our platform</h2>
+                    <div class="card">
+                        <img src="img/card-001.svg" alt="Imagem de certificado">
+                        <h3>Professional & Fast</h3>
+                        <p>Search and hire the most talented freelancers to match your needs. No matter what you need
+                            done, we've got the perfect freelancer for you.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/card-002.svg" alt="imagem de um fone de ouvido">
+                        <h3>24/7 support</h3>
+                        <p>You have any concerns or questions? Don’t worry, we have our support team to help you at
+                            anytime and anywhere.</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/card-003.svg" alt="imagem de um escudo">
+                        <h3>Safe & Secure</h3>
+                        <p>We know that safety is the most important thing for our customer, so all of our payments are
+                            processed instantly and securely.</p>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
 
 
     <script src="js/main.js"></script>

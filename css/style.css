@@ -18,6 +18,10 @@
     --nav-height: 6.2rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     width: 100%;
@@ -31,6 +35,8 @@ body {
     text-align: center;
 
     overflow: overlay;
+
+    /* background-color: var(--cor-fundo-cinza); */
 }
 
 .box-content {
@@ -43,25 +49,28 @@ ul {
     list-style: none;
 }
 
-/* ==HEADER== */
-header {
-
-    margin-top: calc(4.1rem + var(--nav-height));
+section {
+    padding-block: 10rem;
 }
 
-header h1 {
+/* ==HOME== */
+#home {
+    padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#home h1 {
     font-size: 3.4rem;
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
 
-header h4 {
+#home h4 {
     font-size: 1.4rem;
     color: var(--cor-principal-azul);
     margin-bottom: 1.6rem;
 }
 
-header p {
+#home p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -69,7 +78,7 @@ header p {
     margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
     background: var(--cor-principal-azul);
     color: #fff;
     font-size: 1.4rem;
@@ -89,7 +98,7 @@ header button {
     margin-right: auto;
 }
 
-.img-principal img {
+#home .img-principal img {
     width: 26.4rem;
     display: block;
     margin-inline: auto;
@@ -164,6 +173,10 @@ body.extensao-menu .close-menu {
     visibility: visible;
 }
 
+.menu {
+    transform:  translateY(100%);
+}
+
 body.extensao-menu .menu {
     position: fixed;
     top: 0;
@@ -174,6 +187,10 @@ body.extensao-menu .menu {
     height: 100vh;
 
     padding-top: var(--nav-height);
+
+    transition: transform 300ms;
+
+    transform:  translateY(0);
 }
 
 body.extensao-menu nav {
@@ -223,4 +240,41 @@ body.extensao-menu .logo,
 body.extensao-menu nav button {
     position: relative;
     z-index: 100;
+}
+
+/* ==SESSÃO FEATURE== */
+#feature header h4 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.4rem;
+    color: #fff;
+    padding-top: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+#feature header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+#feature .cards {
+    background: var(--cor-principal-azul);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+.card {
+    padding: 2.4rem;
+    text-align: left;
+    color: #fff;
+
+    background: var(--cor-principal-azul);
+
+    border: none;
+    /* border-radius: .6rem; */
+}
+.card h3 {
+    margin-block: 1.8rem;
 }
