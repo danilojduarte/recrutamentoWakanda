@@ -19,7 +19,7 @@
     <title>Wakanda Recruiter</title>
 </head>
 
-<body onscroll="onScroll()" class="extensao-menu">
+<body onscroll="onScroll()" class="">
     <nav id="navegacao" class="">
         <div class="box-content">
             <a class="logo" href="#">
@@ -55,10 +55,14 @@
                 </ul>
 
             </div>
-            <button class="open-menu">
+            <button 
+            onclick="openMenu()"
+            class="open-menu">
                 <box-icon name='menu-alt-right'></box-icon>
             </button>
-            <button class="close-menu">
+            <button 
+            onclick="closeMenu()"
+            class="close-menu">
                 <box-icon name='x'></box-icon>
             </button>
         </div>

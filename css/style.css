@@ -27,7 +27,10 @@ body {
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
+
     text-align: center;
+
+    overflow: overlay;
 }
 
 .box-content {
@@ -133,9 +136,19 @@ nav.scroll {
     background: var(--cor-fundo-cinza);
 }
 
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* ==EXTENSÃO DO MENU== */
 body.extensao-menu {
     overflow: hidden;
+}
+
+body.extensao-menu > :not(nav) {
+    display: none;
 }
 
 .menu,
@@ -159,6 +172,8 @@ body.extensao-menu .menu {
 
     width: 100vw;
     height: 100vh;
+
+    padding-top: var(--nav-height);
 }
 
 body.extensao-menu nav {
@@ -191,16 +206,21 @@ body.extensao-menu nav {
 .menu .button {
     background: var(--cor-principal-azul);
     border-radius: 4rem;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.3rem;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    padding: 8px 18px;
+    padding: 6px 16px;
 
     margin-top: 4.8rem;
     margin-bottom: 6rem;
     cursor: pointer;
+}
+body.extensao-menu .logo,
+body.extensao-menu nav button {
+    position: relative;
+    z-index: 100;
 }

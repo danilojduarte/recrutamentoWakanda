@@ -5,3 +5,12 @@ function onScroll() {
         navegacao.classList.remove('scroll')
     }
 }   
+
+
+function openMenu() {
+    document.body.classList.add('extensao-menu')
+}
+
+function closeMenu () {
+    document.body.classList.remove('extensao-menu')
+}
