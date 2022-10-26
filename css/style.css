@@ -12,7 +12,7 @@
     --cor-fundo-cinza: hsl(0, 0%, 98%);
     --cor-footer: hsl(210, 19%, 14%);
     --cor-text-2: hsl(225, 12%, 87%);
-    --cor-text-2: hsl(225, 12%, 40%);
+    --cor-text-3: hsl(225, 12%, 40%);
 
     font-size: 62.5%;
     --nav-height: 6.2rem;
@@ -130,8 +130,9 @@ nav {
 
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;
+
+    z-index: 100;
 }
 
 nav .box-content {
@@ -141,7 +142,7 @@ nav .box-content {
 }
 
 nav.scroll {
-    width: 100vw;
+    
     background: var(--cor-fundo-cinza);
 }
 
@@ -157,7 +158,7 @@ body.extensao-menu {
 }
 
 body.extensao-menu > :not(nav) {
-    display: none;
+    visibility: hidden;
 }
 
 .menu,
@@ -188,13 +189,9 @@ body.extensao-menu .menu {
 
     padding-top: var(--nav-height);
 
-    transition: transform 300ms;
+    transition: transform 400ms;
 
     transform:  translateY(0);
-}
-
-body.extensao-menu nav {
-    position: relative;
 }
 
 .social-links {
@@ -217,7 +214,7 @@ body.extensao-menu nav {
 
 .menu ul li a {
     text-decoration: none;
-    color: var(--cor-text-2);
+    color: var(--cor-text-3);
     cursor: pointer;
 }
 .menu .button {
@@ -251,7 +248,7 @@ body.extensao-menu nav button {
     font-size: 1.4rem;
     color: #fff;
     padding-top: 1.8rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 #feature header h2 {
     font-size: 3rem;
@@ -264,6 +261,7 @@ body.extensao-menu nav button {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    border-radius: 2rem;
 }
 .card {
     padding: 2.4rem;
@@ -277,4 +275,49 @@ body.extensao-menu nav button {
 }
 .card h3 {
     margin-block: 1.8rem;
+}
+
+/* ==SESSÃO FEATURE== */
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem;
+}
+
+.platform .conteudo h3 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.4rem;
+    color: black;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards-servicos img {
+    width: 4rem;
+    height: auto;
+}
+
+.cards-servicos {
+    padding-block: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    gap: 2rem;
+}
+
+.card-servico {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    color: var(--cor-footer);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    margin-left: 0;
 }
