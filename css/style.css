@@ -245,30 +245,34 @@ body.extensao-menu nav button {
 
     line-height: 150%;
     letter-spacing: 0.08rem;
-    font-size: 1.4rem;
-    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
     padding-top: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 #feature header h2 {
     font-size: 3rem;
     line-height: 3.9rem;
     color: #fff;
     margin-bottom: 4rem;
+    padding-top: 2rem;
 }
 #feature .cards {
     background: var(--cor-principal-azul);
     display: flex;
+    height: 100rem;
     flex-direction: column;
     gap: 3.2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .card {
     padding: 2.4rem;
     text-align: left;
     color: #fff;
+    height: 40%;
 
-    background: var(--cor-principal-azul);
+    background: transparent;
 
     border: none;
     /* border-radius: .6rem; */
@@ -282,7 +286,13 @@ body.extensao-menu nav button {
 .platform {
     display: flex;
     flex-direction: column;
-    padding-block: 2rem;
+    padding-block: 1rem;
+}
+
+.platform-img {
+    width: 30rem;
+    height: auto;
+    margin-bottom: 4rem;
 }
 
 .platform .conteudo h3 {
@@ -302,7 +312,7 @@ body.extensao-menu nav button {
 }
 
 .cards-servicos {
-    padding-block: 2rem;
+    padding-block: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -320,4 +330,44 @@ body.extensao-menu nav button {
     font-weight: 600;
     border: none;
     margin-left: 0;
+}
+/* -- ==SESSÃO TALENTOS== -- */
+.talentos-conteudo h4 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    padding-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.talentos-conteudo p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--cor-text-3);
+    margin-bottom: 3.2rem;
+}
+
+.talentos-conteudo-btn {
+background: var(--cor-principal-azul);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    height: 4rem;
+    width: 14rem;
+
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
