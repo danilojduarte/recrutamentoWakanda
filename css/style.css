@@ -43,7 +43,7 @@ body {
 .box-content {
     width: 37.5rem;
     margin-inline: auto;
-    padding-inline: 2.4rem;
+    padding-inline: 2.0rem;
 }
 
 ul {
@@ -426,19 +426,22 @@ body.extensao-menu nav button {
 
 /* -- ==SESSÃO ANUNCIO== -- */
 .anuncio {
+    height: 80rem;
     background: var(--cor-principal-azul);
+    
     display: flex;
-    height: 100rem;
     flex-direction: column;
-    gap: 3.2rem;
+    justify-content:start;  
+    gap: 2rem;
+
     border-radius: 1rem;
 }
 
 .anuncio-img {
     width: 25rem;
-    height: auto;
+    height: 40rem;
 
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .anuncio-conteudo h4 {
     text-transform: uppercase;
@@ -481,4 +484,38 @@ body.extensao-menu nav button {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* -- ==SESSÃO FOOTER== -- */
+.sessao-footer {
+    display: flex;
+    flex-direction: column;
+    background: #1D242B;
+    color: #fff;
+    height: 80rem;
+
+}
+
+.footer-midias {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-btn {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 4px;
+    background: hsla(0, 1%, 58%, 90%);
+    border: none;
+
+    color: #fff;
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2rem;
 }
