@@ -13,6 +13,7 @@
     --cor-footer: hsl(210, 19%, 14%);
     --cor-text-2: hsl(225, 12%, 87%);
     --cor-text-3: hsl(225, 12%, 40%);
+    --cor-fundo-azul: hsl(198, 100%, 89%);
 
     font-size: 62.5%;
     --nav-height: 6.2rem;
@@ -142,7 +143,7 @@ nav .box-content {
 }
 
 nav.scroll {
-    
+
     background: var(--cor-fundo-cinza);
 }
 
@@ -157,7 +158,7 @@ body.extensao-menu {
     overflow: hidden;
 }
 
-body.extensao-menu > :not(nav) {
+body.extensao-menu> :not(nav) {
     visibility: hidden;
 }
 
@@ -175,7 +176,7 @@ body.extensao-menu .close-menu {
 }
 
 .menu {
-    transform:  translateY(100%);
+    transform: translateY(100%);
 }
 
 body.extensao-menu .menu {
@@ -191,7 +192,7 @@ body.extensao-menu .menu {
 
     transition: transform 400ms;
 
-    transform:  translateY(0);
+    transform: translateY(0);
 }
 
 .social-links {
@@ -200,6 +201,7 @@ body.extensao-menu .menu {
     align-items: center;
     justify-content: center;
 }
+
 .menu ul:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -217,6 +219,7 @@ body.extensao-menu .menu {
     color: var(--cor-text-3);
     cursor: pointer;
 }
+
 .menu .button {
     background: var(--cor-principal-azul);
     border-radius: 4rem;
@@ -233,6 +236,7 @@ body.extensao-menu .menu {
     margin-bottom: 6rem;
     cursor: pointer;
 }
+
 body.extensao-menu .logo,
 body.extensao-menu nav button {
     position: relative;
@@ -251,6 +255,7 @@ body.extensao-menu nav button {
     padding-top: 1.8rem;
     margin-bottom: 2rem;
 }
+
 #feature header h2 {
     font-size: 3rem;
     line-height: 3.9rem;
@@ -258,6 +263,7 @@ body.extensao-menu nav button {
     margin-bottom: 4rem;
     padding-top: 2rem;
 }
+
 #feature .cards {
     background: var(--cor-principal-azul);
     display: flex;
@@ -266,6 +272,7 @@ body.extensao-menu nav button {
     gap: 3.2rem;
     border-radius: 1rem;
 }
+
 .card {
     padding: 2.4rem;
     text-align: left;
@@ -277,6 +284,7 @@ body.extensao-menu nav button {
     border: none;
     /* border-radius: .6rem; */
 }
+
 .card h3 {
     margin-block: 1.8rem;
 }
@@ -316,7 +324,7 @@ body.extensao-menu nav button {
 
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content: flex-end;
     gap: 2rem;
 }
 
@@ -331,7 +339,17 @@ body.extensao-menu nav button {
     border: none;
     margin-left: 0;
 }
+
 /* -- ==SESSÃO TALENTOS== -- */
+.talentos {
+    background: var(--cor-fundo-azul);
+    display: flex;
+    height: 100rem;
+    flex-direction: column;
+    gap: 3.2rem;
+    border-radius: 1rem;
+}
+
 .talentos-conteudo h4 {
     text-transform: uppercase;
 
@@ -353,8 +371,101 @@ body.extensao-menu nav button {
 }
 
 .talentos-conteudo-btn {
-background: var(--cor-principal-azul);
+    background: var(--cor-principal-azul);
     color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    height: 4rem;
+    width: 14rem;
+
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.talentos-img {
+    width: 25rem;
+}
+
+/* -- ==SESSÃO TESTIMONIAL== -- */
+.testimonial h4 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    padding-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial h3 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.4rem;
+    color: black;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* -- ==SESSÃO ANUNCIO== -- */
+.anuncio {
+    background: var(--cor-principal-azul);
+    display: flex;
+    height: 100rem;
+    flex-direction: column;
+    gap: 3.2rem;
+    border-radius: 1rem;
+}
+
+.anuncio-img {
+    width: 25rem;
+    height: auto;
+
+    padding-top: 2rem;
+}
+.anuncio-conteudo h4 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.anuncio-conteudo h3 {
+    text-transform: uppercase;
+
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+.anuncio-btn {
+    background: #fff;
+    color: var(--cor-principal-azul);
     font-size: 1.4rem;
     font-weight: 700;
 
