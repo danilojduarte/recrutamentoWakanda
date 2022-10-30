@@ -565,6 +565,10 @@ nav .close-menu {
 
 /* Responsividade */
 @media (min-width: 1024px) {
+    /* Configurações gerais */
+    .box-content{
+        width:min(112rem, 100%);
+    }
 
     /* reset */
     nav#navegacao .box-content * {
@@ -584,5 +588,37 @@ nav .close-menu {
     nav#navegacao .open-menu,
     nav#navegacao .social-links {
         display: none;
+    }
+    nav#navegacao .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+    }
+    nav#navegacao .menu ul:nth-child(1){
+        display: flex;
+        gap: 3.2rem;
+    }
+    nav#navegacao .menu ul li a{
+        color: black;
+        opacity: 0.7;
+    }
+    nav#navegacao .menu a.button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2.4rem;
+
+        border: 1px solid black;
+        border-radius: 4rem;
+
+        background: var(--cor-principal-azul);
+        color: #fff;
+        opacity: 0.7;
+
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-transform: uppercase;
     }
 }
